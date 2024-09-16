@@ -1,0 +1,16 @@
+projects:
+  blogappcourse-dev:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+      - src/API.ts
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: us-east-1
+        apiId: dxekzpof3ra35gqcg3jkn32vfi
+        maxDepth: 2
